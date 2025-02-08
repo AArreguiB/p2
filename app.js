@@ -1,22 +1,24 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-app.js";
-import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-firestore.js";
-import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-storage.js";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Configuración de Firebase
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyCbR68RwBKlV9a_OE09H86pvD0rcwE3nzg",
-    authDomain: "base-de-datos-html.firebaseapp.com",
-    projectId: "base-de-datos-html",
-    storageBucket: "base-de-datos-html.firebasestorage.app",
-    messagingSenderId: "269728318136",
-    appId: "1:269728318136:web:af1ceda9882c1df1ac2a4d",
-    measurementId: "G-EP481S59T5"
+  apiKey: "AIzaSyA_FafwlV55Z2nveVppNu2hQzxTeVk2jPc",
+  authDomain: "base-de-datos-93dfe.firebaseapp.com",
+  projectId: "base-de-datos-93dfe",
+  storageBucket: "base-de-datos-93dfe.firebasestorage.app",
+  messagingSenderId: "613931429574",
+  appId: "1:613931429574:web:c137a8cf1f604730c171c7",
+  measurementId: "G-YQMWRE92ED"
 };
 
-// Inicializar Firebase
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-const storage = getStorage(app);
+const analytics = getAnalytics(app);
 
 // Función para guardar la receta
 document.addEventListener("DOMContentLoaded", function() {
