@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("formReceta").addEventListener("submit", guardarReceta);
 });
 async function guardarReceta(event) {
-    window.guardarReceta = guardarReceta;
     event.preventDefault();  // Evitar que el formulario se envíe por defecto
 
     // Recoger los datos del formulario
@@ -75,5 +74,3 @@ async function guardarReceta(event) {
     }
 }
 
-// Asociar la función al evento del formulario
-document.getElementById("formReceta").addEventListener("submit", guardarReceta);
