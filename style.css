@@ -105,6 +105,36 @@ li a {
     font-weight: bold;
     color: #333;
 }
+#bienvenida {
+    text-align: center;
+}
+/*pagina de inicio*/
+
+.cat{
+    background-color: #ffcc80;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.cat_contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 20px; 
+}
+.cat:hover {
+    transform: translateY(-10px); /* Eleva el elemento 10px hacia arriba al hacer hover */
+}
+.img{
+    width: 350px;  
+    height: auto;
+    border-radius: 10px; 
+}
+#titulo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Enlaces */
 a {
@@ -113,9 +143,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
 
 /* Footer */
 footer {
@@ -124,6 +151,7 @@ footer {
     color: white;
     padding: 10px;
 }
+/*formulario*/
 
 form {
     background-color: #fff;
