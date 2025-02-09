@@ -19,7 +19,22 @@
 <body>
     <header>
         <h1>Envíanos tu receta</h1>
+        <label for="btn-menu" class="menu-icon">&#9776;</label>
     </header>
+    <input type="checkbox" id="btn-menu" class="menu-toggle">
+    <div class="menu_contenedor">
+        <div class="menu_cont">
+            <nav>
+                <a href="index.html">Inicio</a></li>
+                <a href="recetas_rapidas.html">Recetas Rápidas</a></li>
+                <a href="recetas_partido.html">Recetas para Día de Partido</a></li>
+                <a href="postres.html">Postres Fáciles</a></li>
+                <a href="recetas_internacionales.html">Recetas Internacionales</a></li>
+                <a href="enviar_receta.html">Enviar Receta</a></li>
+            </nav>
+            <label for="btn-menu" class="icon-equis">&times;</label>
+        </div>
+    </div>
     <main id="inicio">
         <form id="formReceta" onsubmit="guardarReceta(event)" enctype="multipart/form-data">
             <div class="fila">
