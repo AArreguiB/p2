@@ -190,7 +190,7 @@ button[type="button"]:hover, button[type="submit"]:hover {
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
-    position: fixed;
+    position:absolute;
     top: 20px;
     left: 20px;
     transition: background-color 0.3s ease;
@@ -199,6 +199,7 @@ button[type="button"]:hover, button[type="submit"]:hover {
 #btn-menu{
     display: none;
 }
+
 .menu_contenedor{
     position: absolute;
     background: rgba(0, 0, 0, 0.5);
@@ -241,14 +242,14 @@ button[type="button"]:hover, button[type="submit"]:hover {
     transition: all 400ms ease;
 }
 .menu_cont nav a:hover{
-    border-left: 5px solid #c7c7c7;
+    border-left: 7px solid #ba5b1f;
     background: #e07b39;
 }
-.menu_cont label{
+.icon-equis{
     position:absolute;
-    right: 5px;
+    right: 10px;
     top:10px;
-    color:#fff;
+    color:#000;
     cursor: pointer;
     font-size:30px;
 }
